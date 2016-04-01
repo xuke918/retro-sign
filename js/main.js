@@ -1,5 +1,5 @@
 $('.svg').on('click', function () {
-  $('this').toggleClass('.is-clicked');
+  $('svg').toggleClass('.is-clicked');
 });
 
 $('.lines').on('animationend', function () {
