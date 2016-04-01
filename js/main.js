@@ -2,6 +2,6 @@ $('.svg').on('click', function () {
   $('svg').toggleClass('.is-clicked');
 });
 
-$('.lines').on('animationend', function () {
-  $(this).removeClass('draw');
+$('.btn').on('click', function () {
+  $('btn').toggleClass('.btn:active');
 });
