@@ -46,16 +46,28 @@ svg {
 }
 
 .is-engaged .line(path) {
-  animation: show .5s linear forward;
+  animation: draw .5s linear forward;
 }
 
-@keyframe draw{
+@keyframe draw {
 
-  0% {
-    transform: translate(0, 0);
+    0% {
+      stroke-dasharray: 0, 480;
+    }
+
+    100% {
+      stroke-dasharray: 480, 480;
+    }
   }
 
-  100% {
-    transform: translate(90deg, 20px, 20px);
+  .is-engaged .btn path:nth-child(2) {
+    fill: #f60;
   }
-}
+
+  .btn:active {
+    transform: scale(1, 1);
+  }
+
+  .btn path:last-child:hover {
+    fill: #f60;
+  }
