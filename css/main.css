@@ -49,7 +49,7 @@ svg {
   animation: draw .5s linear forward;
 }
 
-@keyframe draw {
+@keyframes draw {
 
     0% {
       stroke-dasharray: 0, 480;
