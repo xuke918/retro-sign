@@ -36,6 +36,18 @@ svg {
   animation: line 2s linear;
 }
 
+.is-engaged {
+  transition: all .5s ease;
+  fill: #f60;
+}
+
+.engage path:nth-child(2){
+  transition-delay: 0.2s;
+}
+
+.is-engaged .line(path) {
+  animation: show .5s linear forward;
+}
 
 @keyframe draw{
 
